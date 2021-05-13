@@ -1,2 +1,3 @@
 # UofT-Grade-Analytics
-Reads Excel files and gives CGPA
+Reads Excel transcipt files and calculates CGPA. 
+If certain classes are in progress, then use regression models to predict the outcome grade.
