@@ -2,6 +2,7 @@ import numpy as np
 from openpyxl import load_workbook
 from grade_to_gpa import find_gpa
 
+#reads the workbook and parse out the information
 def parse_syllabus(workbook):
 	"""parses a syllabus and current grades"""
 	sum_weight = []
@@ -26,6 +27,7 @@ def calc_curr(lst1,lst2):
 	return sum
 
 def predict(str):
+	"""use linear regression to predict grade outcome"""
 	wb = load_workbook(filename = f"{str}{'.xlsx'}").active
 
 	a,b,c = parse_syllabus(wb)

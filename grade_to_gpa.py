@@ -1,5 +1,5 @@
 def find_gpa(float):
-	"""gives the gpa accodingto uoft scale"""
+	"""gives the gpa according to uoft scale"""
 	if 85 <= float <= 100:
 		return 4
 	if 80 <= float <= 84:

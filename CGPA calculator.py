@@ -2,9 +2,6 @@ from openpyxl import load_workbook
 from grade_to_gpa import find_gpa
 from Predictor import predict
 
-'''print(sheet['A18'].value) prints value in box A18'''
-'''print(sheet.max_row) prints the max number of rows'''
-
 def weighted_average_grade(workbook):
 	"""outputs weighted average of grades"""
 	total_weight = 0
@@ -38,7 +35,7 @@ def unweighted_average_grade(workbook):
 	print(total_grade/count)
 
 def weighted_average_gpa(workbook):
-	"""outputs weighted average of grades"""
+	"""outputs weighted average of gpa"""
 	total_weight = 0
 	total_gpa = 0
 
@@ -54,7 +51,7 @@ def weighted_average_gpa(workbook):
 	print(total_gpa/total_weight)
 
 def unweighted_average_gpa(workbook):
-	"""outputs unweighted average of grades"""
+	"""outputs unweighted average of gpa"""
 	count = 0
 	total_gpa = 0
 
